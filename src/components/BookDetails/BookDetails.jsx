@@ -4,6 +4,7 @@ import { addToStoredDB } from "../../utility/addToDB";
 
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
+import { Helmet } from "react-helmet";
 
 const MySwal = withReactContent(Swal);
 
@@ -39,6 +40,9 @@ const BookDetails = () => {
 
   return (
     <div className="m-10 p-5 ">
+        <Helmet>
+            <title>Book Details</title>
+        </Helmet>
       <div className="flex gap-10">
         <img
           className="h-[400px] rounded-sm p-10 bg-gray-100"
